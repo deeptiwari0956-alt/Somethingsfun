@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #101828;
+  --muted: #667085;
+  --purple: #6957ff;
+  --purple-dark: #5646e8;
+  --line: #e7e8ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(105, 87, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(105, 87, 255, 0.055) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+::selection {
+  background: rgba(105, 87, 255, 0.18);
+}
